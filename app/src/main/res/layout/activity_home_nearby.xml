@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_margin="15dp"
+    tools:context="com.mahmud.tourguide.Nearby.HomeActivityNearby">
+
+    <Button
+        android:id="@+id/nearbyResBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nearby Restaurent"/>
+    <Button
+        android:id="@+id/nearbyATMBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nearby ATM Booth"/>
+
+    <Button
+        android:id="@+id/nearbyHospitalBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nearby Hospital"/>
+
+
+</LinearLayout>

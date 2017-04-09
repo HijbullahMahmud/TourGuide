@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_cost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mahmud.tourguide.Activity.Imtiaz.AddCostActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:background="@color/layoutBackground"
+        android:textColor="@color/textColor"
+        />
+
+        <EditText
+            android:background="@color/layoutBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Expense Details"
+            android:gravity="left"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:textColor="@color/textColor"
+            android:maxLines="1"
+            android:inputType="text"
+            android:id="@+id/descriptionET"
+            />
+        <EditText
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:background="@color/layoutBackground"
+            android:id="@+id/costAmountET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Expense Amount in Tk"
+            android:gravity="left"
+            android:inputType="number"
+            android:textColor="@color/textColor"/>
+
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:id="@+id/entryCostBtn"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entry Record"
+        android:textAllCaps="false"
+        android:layout_gravity="right"
+        android:onClick="EntryCostFunction"
+        android:padding="10dp"
+        />
+
+
+
+</LinearLayout>

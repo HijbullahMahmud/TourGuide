@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/destination_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Destination"/>
+    <TextView
+        android:id="@+id/showDate_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jan 30,2017 to Feb 31, 2017"
+        android:textColor="#000"
+        android:layout_below="@+id/destination_TV"/>
+
+
+    <TextView
+        android:id="@+id/totalBudget_TV"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$1000"
+        android:layout_alignBaseline="@+id/destination_TV"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:id="@+id/showTotalDay_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14d 14h"
+        android:textColor="#000"
+        android:layout_below="@+id/totalBudget_TV"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/totalExpned_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$100.0"
+        android:textColor="#000"
+        android:layout_below="@+id/showTotalDay_TV"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

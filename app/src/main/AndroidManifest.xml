@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mahmud.tourguide">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tourguide"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="User Login" />
+        <activity
+            android:name=".Activity.SignupActivity"
+            android:label="Create Account" />
+        <activity
+            android:name=".Activity.UserProfileActivity"
+            android:label="Profile" />
+        <activity
+            android:name=".Activity.EventActivity"
+            android:label="@string/title_activity_event"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".Activity.Imtiaz.AddCostActivity" />
+        <activity android:name=".Activity.Imtiaz.AddEventActivity" />
+        <activity android:name=".Activity.Imtiaz.CostListActivity" />
+        <activity android:name=".Activity.Imtiaz.EventListActivity" />
+        <activity android:name=".Nearby.HomeActivityNearby" />
+        <activity android:name=".Nearby.MainActivity" />
+
+        <activity android:name=".ActivityWeather.DhakaActivity" />
+        <activity android:name=".ActivityWeather.KhulnaActivity" />
+        <activity android:name=".ActivityWeather.RajshahiActivity" />
+        <activity android:name=".ActivityWeather.SelectCityActivity" />
+
+
+        <service
+            android:name=".Service.MyIntentService"
+            android:exported="false" />
+
+        <activity android:name=".Activity.AboutActivity"></activity>
+    </application>
+
+</manifest>

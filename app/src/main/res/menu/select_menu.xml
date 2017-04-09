@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <item
+        android:orderInCategory="1"
+        android:id="@+id/selectMenuId"
+        android:title="Select City"
+
+    />
+    <item
+        android:orderInCategory="2"
+        android:id="@+id/menuDhakaId"
+        android:title="Dhaka"
+
+        />
+    <item
+        android:orderInCategory="3"
+        android:id="@+id/menuKhulnaId"
+        android:title="Khulna"
+
+        />
+
+
+</menu>

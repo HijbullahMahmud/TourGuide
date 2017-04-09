@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mahmud.tourguide.Activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+         >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#1A237E"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="28dp"
+            android:padding="8dp"
+            android:background="@color/layoutBackground">
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Email :"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/emailValueET"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Your Email"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/textColor"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:background="@color/layoutBackground">
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Password :"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/textColor"/>
+            <EditText
+                android:id="@+id/passwordValueET"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Your Password"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LogIn"
+            android:textSize="16sp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:textAllCaps="false"
+            android:background="#1A237E"
+            android:textColor="@color/textColor"
+            android:onClick="logIn"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:padding="6dp">
+            <TextView
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account ?"
+                android:textSize="15dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textColor="#F44336"/>
+            <TextView
+                android:id="@+id/signInTV"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="SignUp"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="#0aea06"
+                android:onClick="signIn"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mahmud.tourguide.Activity.Imtiaz.AddEventActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_add_event"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add an event"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="40dp"
+            android:background="@color/layoutBackground"
+            android:textColor="@color/textColor"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/destinationET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Travel Destination"/>
+        <EditText
+            android:id="@+id/budgetET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Estimate Budget"/>
+        <EditText
+            android:id="@+id/fromdateET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="date"
+            android:hint="From Date"/>
+        <EditText
+            android:id="@+id/todateET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="date"
+            android:hint="To Date"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Event"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/textColor"
+            android:padding="8dp"
+            android:onClick="createEventFunction"
+            android:id="@+id/eventCreateBTN"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>
